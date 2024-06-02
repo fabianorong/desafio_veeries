@@ -1,9 +1,9 @@
 import os
 import logging
 from datetime import datetime
-from scripts.scraper import scrape_paranagua_data
-from scripts.data_processing import save_to_database, save_to_csv
-from scripts.utils import create_directories
+from .scripts.scraper import scrape_paranagua_data
+from .scripts.data_processing import save_to_database, save_to_csv
+from .scripts.utils import create_directories
 
 
 # Configuração de logging

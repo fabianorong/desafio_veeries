@@ -1,6 +1,6 @@
 import logging
 from .utils import fetch_page, parse_html
-from config.config_request import ConfigRequest
+from ..config.config_request import ConfigRequest
 
 
 logger = logging.getLogger(__name__)

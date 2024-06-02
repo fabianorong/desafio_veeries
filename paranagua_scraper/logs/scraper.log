@@ -1,0 +1,184 @@
+2024-06-02 07:46:58,774 - INFO - Iniciando o processo de scraping e combinação dos dados
+2024-06-02 07:46:58,775 - INFO - Iniciando scraping de dados de Paranagua
+2024-06-02 07:46:58,775 - INFO - Iniciando scraping para o sentido: Import
+2024-06-02 07:46:59,179 - INFO - Iniciando parsing da tabela para o sentido: Import
+2024-06-02 07:46:59,297 - INFO - Parsing concluído para o sentido: Import, 37 registros encontrados
+2024-06-02 07:46:59,300 - INFO - Iniciando scraping para o sentido: Export
+2024-06-02 07:46:59,573 - INFO - Iniciando parsing da tabela para o sentido: Export
+2024-06-02 07:46:59,709 - INFO - Parsing concluído para o sentido: Export, 33 registros encontrados
+2024-06-02 07:46:59,709 - INFO - Iniciando scraping para o sentido: ImportExport
+2024-06-02 07:46:59,988 - INFO - Iniciando parsing da tabela para o sentido: ImportExport
+2024-06-02 07:47:00,109 - INFO - Parsing concluído para o sentido: ImportExport, 74 registros encontrados
+2024-06-02 07:47:00,109 - INFO - Scraping concluído
+2024-06-02 07:47:00,110 - INFO - Iniciando salvamento no banco de dados.
+2024-06-02 07:47:00,152 - INFO - Dados salvos com sucesso no banco de dados.
+2024-06-02 07:47:00,152 - INFO - Iniciando salvamento em CSV.
+2024-06-02 07:47:00,251 - INFO - Dados salvos com sucesso no CSV.
+2024-06-02 07:47:00,251 - INFO - Processo concluido com sucesso
+2024-06-02 07:47:00,251 - INFO - Iniciando o processo de scraping dos dados do Porto de Santos
+2024-06-02 07:47:00,251 - INFO - Iniciando scraping para o sentido: import
+2024-06-02 07:47:11,991 - INFO - Scraping concluído para o sentido: import com 13 registros.
+2024-06-02 07:47:17,460 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\import\santos_import_02062024_074717.db
+2024-06-02 07:47:17,464 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\import\santos_import_02062024_074717.csv
+2024-06-02 07:47:17,464 - INFO - Iniciando scraping para o sentido: export
+2024-06-02 07:47:27,769 - INFO - Scraping concluído para o sentido: export com 28 registros.
+2024-06-02 07:47:31,823 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\export\santos_export_02062024_074731.db
+2024-06-02 07:47:31,827 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\export\santos_export_02062024_074731.csv
+2024-06-02 07:47:31,848 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_074731.db
+2024-06-02 07:47:31,853 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_074731.csv
+2024-06-02 07:47:31,853 - INFO - Dados combinados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_074731.db e CSV:santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_074731.csv
+2024-06-02 07:47:31,853 - INFO - Scraping e arquivos exportados concluído com sucesso
+2024-06-02 07:54:41,933 - INFO - Iniciando o processo de scraping e combinação dos dados
+2024-06-02 07:54:41,934 - INFO - Iniciando scraping de dados de Paranagua
+2024-06-02 07:54:41,934 - INFO - Iniciando scraping para o sentido: Import
+2024-06-02 07:54:42,219 - INFO - Iniciando parsing da tabela para o sentido: Import
+2024-06-02 07:54:42,340 - INFO - Parsing concluído para o sentido: Import, 37 registros encontrados
+2024-06-02 07:54:42,340 - INFO - Iniciando scraping para o sentido: Export
+2024-06-02 07:54:42,614 - INFO - Iniciando parsing da tabela para o sentido: Export
+2024-06-02 07:54:42,745 - INFO - Parsing concluído para o sentido: Export, 33 registros encontrados
+2024-06-02 07:54:42,745 - INFO - Iniciando scraping para o sentido: ImportExport
+2024-06-02 07:54:43,038 - INFO - Iniciando parsing da tabela para o sentido: ImportExport
+2024-06-02 07:54:43,153 - INFO - Parsing concluído para o sentido: ImportExport, 74 registros encontrados
+2024-06-02 07:54:43,153 - INFO - Scraping concluído
+2024-06-02 07:54:43,154 - INFO - Iniciando salvamento no banco de dados.
+2024-06-02 07:54:43,177 - INFO - Dados salvos com sucesso no banco de dados.
+2024-06-02 07:54:43,177 - INFO - Iniciando salvamento em CSV.
+2024-06-02 07:54:43,184 - INFO - Dados salvos com sucesso no CSV.
+2024-06-02 07:54:43,185 - INFO - Processo concluido com sucesso
+2024-06-02 07:54:43,185 - INFO - Iniciando o processo de scraping dos dados do Porto de Santos
+2024-06-02 07:54:43,185 - INFO - Iniciando scraping para o sentido: import
+2024-06-02 07:54:53,414 - INFO - Scraping concluído para o sentido: import com 13 registros.
+2024-06-02 07:54:57,518 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\import\santos_import_02062024_075457.db
+2024-06-02 07:54:57,524 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\import\santos_import_02062024_075457.csv
+2024-06-02 07:54:57,524 - INFO - Iniciando scraping para o sentido: export
+2024-06-02 07:55:07,858 - INFO - Scraping concluído para o sentido: export com 28 registros.
+2024-06-02 07:55:11,927 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\export\santos_export_02062024_075511.db
+2024-06-02 07:55:11,931 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\export\santos_export_02062024_075511.csv
+2024-06-02 07:55:11,952 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_075511.db
+2024-06-02 07:55:11,957 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_075511.csv
+2024-06-02 07:55:11,957 - INFO - Dados combinados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_075511.db e CSV:santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_075511.csv
+2024-06-02 07:55:11,958 - INFO - Scraping e arquivos exportados concluído com sucesso
+2024-06-02 08:01:50,056 - INFO - Iniciando o processo de scraping e combinação dos dados
+2024-06-02 08:01:50,057 - INFO - Iniciando scraping de dados de Paranagua
+2024-06-02 08:01:50,057 - INFO - Iniciando scraping para o sentido: Import
+2024-06-02 08:01:50,332 - INFO - Iniciando parsing da tabela para o sentido: Import
+2024-06-02 08:01:50,449 - INFO - Parsing concluído para o sentido: Import, 37 registros encontrados
+2024-06-02 08:01:50,449 - INFO - Iniciando scraping para o sentido: Export
+2024-06-02 08:01:50,748 - INFO - Iniciando parsing da tabela para o sentido: Export
+2024-06-02 08:01:50,882 - INFO - Parsing concluído para o sentido: Export, 33 registros encontrados
+2024-06-02 08:01:50,882 - INFO - Iniciando scraping para o sentido: ImportExport
+2024-06-02 08:02:00,986 - INFO - Iniciando parsing da tabela para o sentido: ImportExport
+2024-06-02 08:02:01,103 - INFO - Parsing concluído para o sentido: ImportExport, 74 registros encontrados
+2024-06-02 08:02:01,104 - INFO - Scraping concluído
+2024-06-02 08:02:01,104 - INFO - Iniciando salvamento no banco de dados.
+2024-06-02 08:02:01,124 - INFO - Dados salvos com sucesso no banco de dados.
+2024-06-02 08:02:01,124 - INFO - Iniciando salvamento em CSV.
+2024-06-02 08:02:01,133 - INFO - Dados salvos com sucesso no CSV.
+2024-06-02 08:02:01,133 - INFO - Processo concluido com sucesso
+2024-06-02 08:02:01,133 - INFO - Iniciando o processo de scraping dos dados do Porto de Santos
+2024-06-02 08:02:01,134 - INFO - Iniciando scraping para o sentido: import
+2024-06-02 08:02:11,261 - INFO - Scraping concluído para o sentido: import com 13 registros.
+2024-06-02 08:02:15,355 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\import\santos_import_02062024_080215.db
+2024-06-02 08:02:15,360 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\import\santos_import_02062024_080215.csv
+2024-06-02 08:02:15,361 - INFO - Iniciando scraping para o sentido: export
+2024-06-02 08:02:25,720 - INFO - Scraping concluído para o sentido: export com 28 registros.
+2024-06-02 08:02:29,779 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\export\santos_export_02062024_080229.db
+2024-06-02 08:02:29,783 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\export\santos_export_02062024_080229.csv
+2024-06-02 08:02:29,804 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_080229.db
+2024-06-02 08:02:29,808 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_080229.csv
+2024-06-02 08:02:29,808 - INFO - Dados combinados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_080229.db e CSV:santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_080229.csv
+2024-06-02 08:02:29,809 - INFO - Scraping e arquivos exportados concluído com sucesso
+2024-06-02 08:02:29,821 - INFO - Processo concluído com sucesso
+2024-06-02 08:15:54,542 - INFO - Iniciando o processo de scraping e combinacao dos dados
+2024-06-02 08:15:54,543 - INFO - Iniciando scraping de dados de Paranagua
+2024-06-02 08:15:54,543 - INFO - Iniciando scraping para o sentido: Import
+2024-06-02 08:15:54,832 - INFO - Iniciando parsing da tabela para o sentido: Import
+2024-06-02 08:15:54,954 - INFO - Parsing concluído para o sentido: Import, 37 registros encontrados
+2024-06-02 08:15:54,954 - INFO - Iniciando scraping para o sentido: Export
+2024-06-02 08:15:55,234 - INFO - Iniciando parsing da tabela para o sentido: Export
+2024-06-02 08:15:55,374 - INFO - Parsing concluído para o sentido: Export, 33 registros encontrados
+2024-06-02 08:15:55,374 - INFO - Iniciando scraping para o sentido: ImportExport
+2024-06-02 08:15:55,657 - INFO - Iniciando parsing da tabela para o sentido: ImportExport
+2024-06-02 08:15:55,779 - INFO - Parsing concluído para o sentido: ImportExport, 74 registros encontrados
+2024-06-02 08:15:55,780 - INFO - Scraping concluído
+2024-06-02 08:15:55,780 - INFO - Iniciando salvamento no banco de dados.
+2024-06-02 08:15:55,803 - INFO - Dados salvos com sucesso no banco de dados.
+2024-06-02 08:15:55,803 - INFO - Iniciando salvamento em CSV.
+2024-06-02 08:15:55,811 - INFO - Dados salvos com sucesso no CSV.
+2024-06-02 08:15:55,811 - INFO - Processo concluido com sucesso
+2024-06-02 08:15:55,813 - INFO - Iniciando o processo de scraping dos dados do Porto de Santos
+2024-06-02 08:15:55,813 - INFO - Iniciando scraping para o sentido: import
+2024-06-02 08:16:06,383 - INFO - Scraping concluído para o sentido: import com 13 registros.
+2024-06-02 08:16:10,506 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\import\santos_import_02062024_081610.db
+2024-06-02 08:16:10,511 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\import\santos_import_02062024_081610.csv
+2024-06-02 08:16:10,511 - INFO - Iniciando scraping para o sentido: export
+2024-06-02 08:16:20,978 - INFO - Scraping concluído para o sentido: export com 28 registros.
+2024-06-02 08:16:25,049 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\export\santos_export_02062024_081625.db
+2024-06-02 08:16:25,054 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\export\santos_export_02062024_081625.csv
+2024-06-02 08:16:25,075 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_081625.db
+2024-06-02 08:16:25,079 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_081625.csv
+2024-06-02 08:16:25,080 - INFO - Dados combinados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_081625.db e CSV:santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_081625.csv
+2024-06-02 08:16:25,080 - INFO - Scraping e arquivos exportados concluído com sucesso
+2024-06-02 08:16:25,092 - INFO - Processo concluido com sucesso
+2024-06-02 08:27:47,563 - INFO - Iniciando o processo de scraping e combinacao dos dados
+2024-06-02 08:27:47,564 - INFO - Iniciando scraping de dados de Paranagua
+2024-06-02 08:27:47,564 - INFO - Iniciando scraping para o sentido: Import
+2024-06-02 08:27:47,851 - INFO - Iniciando parsing da tabela para o sentido: Import
+2024-06-02 08:27:47,970 - INFO - Parsing concluído para o sentido: Import, 37 registros encontrados
+2024-06-02 08:27:47,970 - INFO - Iniciando scraping para o sentido: Export
+2024-06-02 08:27:48,311 - INFO - Iniciando parsing da tabela para o sentido: Export
+2024-06-02 08:27:48,445 - INFO - Parsing concluído para o sentido: Export, 33 registros encontrados
+2024-06-02 08:27:48,446 - INFO - Iniciando scraping para o sentido: ImportExport
+2024-06-02 08:27:48,735 - INFO - Iniciando parsing da tabela para o sentido: ImportExport
+2024-06-02 08:27:48,853 - INFO - Parsing concluído para o sentido: ImportExport, 74 registros encontrados
+2024-06-02 08:27:48,853 - INFO - Scraping concluído
+2024-06-02 08:27:48,853 - INFO - Iniciando salvamento no banco de dados.
+2024-06-02 08:27:48,876 - INFO - Dados salvos com sucesso no banco de dados.
+2024-06-02 08:27:48,876 - INFO - Iniciando salvamento em CSV.
+2024-06-02 08:27:48,884 - INFO - Dados salvos com sucesso no CSV.
+2024-06-02 08:27:48,885 - INFO - Processo concluido com sucesso
+2024-06-02 08:27:48,885 - INFO - Iniciando o processo de scraping dos dados do Porto de Santos
+2024-06-02 08:27:48,885 - INFO - Iniciando scraping para o sentido: import
+2024-06-02 08:27:58,848 - INFO - Scraping concluído para o sentido: import com 13 registros.
+2024-06-02 08:28:03,004 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\import\santos_import_02062024_082802.db
+2024-06-02 08:28:03,009 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\import\santos_import_02062024_082803.csv
+2024-06-02 08:28:03,009 - INFO - Iniciando scraping para o sentido: export
+2024-06-02 08:28:13,404 - INFO - Scraping concluído para o sentido: export com 28 registros.
+2024-06-02 08:28:17,467 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\export\santos_export_02062024_082817.db
+2024-06-02 08:28:17,472 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\export\santos_export_02062024_082817.csv
+2024-06-02 08:28:17,507 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_082817.db
+2024-06-02 08:28:17,511 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_082817.csv
+2024-06-02 08:28:17,512 - INFO - Dados combinados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_082817.db e CSV:santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_082817.csv
+2024-06-02 08:28:17,512 - INFO - Scraping e arquivos exportados concluído com sucesso
+2024-06-02 08:28:17,541 - INFO - Processo concluido com sucesso
+2024-06-02 08:32:35,742 - INFO - Iniciando o processo de scraping e combinacao dos dados
+2024-06-02 08:32:35,744 - INFO - Iniciando scraping de dados de Paranagua
+2024-06-02 08:32:35,744 - INFO - Iniciando scraping para o sentido: Import
+2024-06-02 08:32:36,035 - INFO - Iniciando parsing da tabela para o sentido: Import
+2024-06-02 08:32:36,155 - INFO - Parsing concluído para o sentido: Import, 37 registros encontrados
+2024-06-02 08:32:36,155 - INFO - Iniciando scraping para o sentido: Export
+2024-06-02 08:32:36,427 - INFO - Iniciando parsing da tabela para o sentido: Export
+2024-06-02 08:32:36,564 - INFO - Parsing concluído para o sentido: Export, 33 registros encontrados
+2024-06-02 08:32:36,564 - INFO - Iniciando scraping para o sentido: ImportExport
+2024-06-02 08:32:36,840 - INFO - Iniciando parsing da tabela para o sentido: ImportExport
+2024-06-02 08:32:36,959 - INFO - Parsing concluído para o sentido: ImportExport, 74 registros encontrados
+2024-06-02 08:32:36,959 - INFO - Scraping concluído
+2024-06-02 08:32:36,960 - INFO - Iniciando salvamento no banco de dados.
+2024-06-02 08:32:36,982 - INFO - Dados salvos com sucesso no banco de dados.
+2024-06-02 08:32:36,982 - INFO - Iniciando salvamento em CSV.
+2024-06-02 08:32:36,990 - INFO - Dados salvos com sucesso no CSV.
+2024-06-02 08:32:36,990 - INFO - Processo concluido com sucesso
+2024-06-02 08:32:36,990 - INFO - Iniciando o processo de scraping dos dados do Porto de Santos
+2024-06-02 08:32:36,991 - INFO - Iniciando scraping para o sentido: import
+2024-06-02 08:32:47,010 - INFO - Scraping concluído para o sentido: import com 13 registros.
+2024-06-02 08:32:51,100 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\import\santos_import_02062024_083251.db
+2024-06-02 08:32:51,105 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\import\santos_import_02062024_083251.csv
+2024-06-02 08:32:51,106 - INFO - Iniciando scraping para o sentido: export
+2024-06-02 08:33:01,472 - INFO - Scraping concluído para o sentido: export com 28 registros.
+2024-06-02 08:33:05,519 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\export\santos_export_02062024_083305.db
+2024-06-02 08:33:05,525 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\export\santos_export_02062024_083305.csv
+2024-06-02 08:33:05,547 - INFO - Dados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_083305.db
+2024-06-02 08:33:05,552 - INFO - Dados salvos com sucesso no CSV: santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_083305.csv
+2024-06-02 08:33:05,552 - INFO - Dados combinados salvos com sucesso no banco de dados: santos_scraper\data\db\ImpExp\santos_ImpExp_02062024_083305.db e CSV:santos_scraper\data\csv\ImpExp\santos_ImpExp_02062024_083305.csv
+2024-06-02 08:33:05,552 - INFO - Scraping e arquivos exportados concluído com sucesso
+2024-06-02 08:33:05,585 - INFO - Processo concluido com sucesso

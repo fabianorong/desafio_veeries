@@ -4,7 +4,7 @@ import pytz
 from datetime import datetime
 import os
 import logging
-from config.config import OUTPUT_DIR, DB_DIR, CSV_DIR
+from ..config.config import OUTPUT_DIR, DB_DIR, CSV_DIR
 from .utils import create_directories
 
 logger = logging.getLogger(__name__)
@@ -81,13 +81,14 @@ def _save_data_to_db(data, sentido, db_path):
                 sentido TEXT,
                 mercadoria TEXT, 
                 eta DATE, 
-                peso INTEGER,                    
+                peso INTEGER,
+                unidade_Peso TEXT,                    
                 updated_On TIMESTAMP 
             )"""
         )
         for entry in data:
             c.execute(
-                f"""INSERT INTO santos_{sentido} (porto, sentido, mercadoria, eta, peso, updated_On) VALUES (?, ?, ?, ?, ?, ?)""",
+                f"""INSERT INTO santos_{sentido} (porto, sentido, mercadoria, eta, peso, unidade_Peso, updated_On) VALUES (?, ?, ?, ?, ?, ?,?)""",
                 (*entry, now),
             )
         conn.commit()
@@ -108,11 +109,13 @@ def _get_csv_path(sentido):
 
 def _save_data_to_csv(data, sentido, csv_path):
     # Cria um DataFrame a partir dos dados
-    df = pd.DataFrame(data, columns=["porto", "sentido", "mercadoria", "eta", "peso"])
+    df = pd.DataFrame(
+        data, columns=["porto", "sentido", "mercadoria", "eta", "peso", "unidade_Peso"]
+    )
 
     # Agrupa os dados por porto, sentido, eta e mercadoria, somando os pesos
     df_grouped = (
-        df.groupby(["porto", "sentido", "eta", "mercadoria"])
+        df.groupby(["porto", "sentido", "eta", "mercadoria", "unidade_Peso"])
         .agg({"peso": "sum"})
         .reset_index()
     )
@@ -124,6 +127,11 @@ def _save_data_to_csv(data, sentido, csv_path):
 
     # Converte a coluna 'eta' de volta para o formato de string
     df_grouped["eta"] = df_grouped["eta"].dt.strftime("%d/%m/%Y")
+
+    # Ordena as colunas no padrão de relevancia
+    df_grouped = df_grouped[
+        ["porto", "sentido", "eta", "mercadoria", "peso", "unidade_Peso"]
+    ]
 
     # Salva o DataFrame no arquivo CSV
     df_grouped.to_csv(csv_path, index=False)

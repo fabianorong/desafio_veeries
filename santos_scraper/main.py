@@ -1,7 +1,7 @@
 import logging
-from scripts.scraper import scrape_santos_data
-from scripts.data_processing import save_to_database, save_to_csv, save_combined_data
-from scripts.utils import create_directories
+from .scripts.scraper import scrape_santos_data
+from .scripts.data_processing import save_to_database, save_to_csv, save_combined_data
+from .scripts.utils import create_directories
 import os
 
 # Configuração de logging

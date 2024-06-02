@@ -2,8 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
-from config.config import CHROME_PATH
-from config.config_request import ConfigRequest
+from ..config.config import CHROME_PATH
+from ..config.config_request import ConfigRequest
 import time
 import logging
 
@@ -45,7 +45,8 @@ def scrape_santos_data(time_sleep, table_number, sentido):
                 .text.replace(",", "")
                 .replace(".", "")
             )
-            data.append(("Santos", sentido, mercadoria, eta_date, peso))
+
+            data.append(("Santos", sentido, mercadoria, eta_date, peso, "Tons"))
     except Exception as e:
         logger.error(f"Erro ao fazer scraping: {e}")
     finally:
