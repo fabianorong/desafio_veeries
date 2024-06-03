@@ -89,36 +89,6 @@ def main():
     except Exception as e:
         logging.error(f"Ocorreu um erro: {e}")
 
-    # # Realiza o scraping dos dados para os sentidos definidos
-    # all_data = scrape_paranagua_data(sentidos)
-
-    # # Se houver dados extraídos
-    # if all_data:
-    #     # Gera um timestamp para os nomes dos arquivos
-    #     timestamp = datetime.now().strftime("%d%m%Y_%H%M%S")
-
-    #     # Define os nomes dos arquivos CSV e de banco de dados
-    #     csv_filename = f"paranagua__{timestamp}.csv"
-    #     db_filename = f"paranagua__{timestamp}.csv"
-
-    #     # Define os diretórios de saída para o banco de dados e CSV
-    #     output_db_dir = os.path.join("paranagua_scraper", DATA_DIR, DB_DIR)
-    #     output_csv_dir = os.path.join("paranagua_scraper", DATA_DIR, CSV_DIR)
-
-    #     # Cria os diretórios de saída, se não existirem
-    #     create_directories([output_db_dir, output_csv_dir])
-
-    #     # Define os caminhos completos dos arquivos
-    #     db_path = os.path.join(output_db_dir, db_filename)
-    #     csv_path = os.path.join(output_csv_dir, csv_filename)
-
-    #     # Salva os dados no banco de dados e no arquivo CSV
-    #     save_to_database(all_data, db_path)
-    #     save_to_csv(all_data, csv_path)
-    #     logging.info("Processo concluido com sucesso")
-    # else:
-    #     logging.warning("Nenhum dado foi extraido")
-
 
 if __name__ == "__main__":
     main()
