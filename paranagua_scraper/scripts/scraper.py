@@ -6,7 +6,7 @@ from ..config.config_request import ConfigRequest
 logger = logging.getLogger(__name__)
 
 
-def parse_table(content, sentido_cell_value, sentido):
+def scrape_paranagua_data(sentido_cell_value, sentido):
     """
     Extrai os dados da tabela HTML.
 
@@ -19,6 +19,7 @@ def parse_table(content, sentido_cell_value, sentido):
     Lista de tuplas contendo os dados extraídos.
     """
     logger.info(f"Iniciando parsing da tabela para o sentido: {sentido}")
+    content = fetch_page(ConfigRequest.URL, ConfigRequest.HEADERS)
     soup = parse_html(content)
     tabela = soup.find_all(
         "table", class_="table table-bordered table-striped table-hover"
@@ -29,13 +30,20 @@ def parse_table(content, sentido_cell_value, sentido):
     data = []
 
     # Itera sobre as linhas da tabela
-    for linha in linhas_tabela_esperados:
-        if linha.find("td", string=f"{sentido_cell_value}"):
-            cells = linha.find_all("td")
-            if len(cells) > 10:
-                data.append(extract_data(cells, 11, 12, 15, sentido))
-            else:
-                data.append(extract_data(cells, 3, 4, 7, sentido))
+    try:
+        logger.info(f"Iniciando scraping para o sentido: {sentido}")
+
+        for linha in linhas_tabela_esperados:
+            if linha.find("td", string=f"{sentido_cell_value}"):
+                cells = linha.find_all("td")
+                if len(cells) > 10:
+                    data.append(extract_data(cells, 11, 12, 15, sentido))
+                else:
+                    data.append(extract_data(cells, 3, 4, 7, sentido))
+
+    except Exception as e:
+        logger.error(f"Erro ao fazer scraping: {e}")
+
     logger.info(
         f"Parsing concluído para o sentido: {sentido}, {len(data)} registros encontrados"
     )
@@ -65,26 +73,26 @@ def extract_data(cells, mercadoria_idx, eta_idx, peso_idx, sentido):
     return ("Paranagua", sentido, mercadoria, eta_date, peso, unidade_peso)
 
 
-def scrape_paranagua_data(sentidos):
-    """
-    Realiza o scraping dos dados de Paranaguá.
+# def scrape_paranagua_data(sentidos):
+#     """
+#     Realiza o scraping dos dados de Paranaguá.
 
-    Parâmetros:
-    - sentidos: Lista de tuplas contendo os sentidos e seus valores correspondentes.
+#     Parâmetros:
+#     - sentidos: Lista de tuplas contendo os sentidos e seus valores correspondentes.
 
-    Retorna:
-    Lista de tuplas contendo os dados extraídos de todas as páginas.
-    """
-    logger.info("Iniciando scraping de dados de Paranagua")
-    all_data = []
-    for sentido, sentido_cell_value in sentidos:
-        logger.info(f"Iniciando scraping para o sentido: {sentido}")
-        content = fetch_page(ConfigRequest.URL, ConfigRequest.HEADERS)
-        if content:
-            data = parse_table(content, sentido_cell_value, sentido)
-            if data:
-                all_data.extend(data)
-        else:
-            logger.warning(f"Falha ao obter conteúdo para o sentido: {sentido}")
-    logger.info("Scraping concluído")
-    return all_data
+#     Retorna:
+#     Lista de tuplas contendo os dados extraídos de todas as páginas.
+#     """
+#     logger.info("Iniciando scraping de dados de Paranagua")
+#     all_data = []
+#     for sentido, sentido_cell_value in sentidos:
+#         logger.info(f"Iniciando scraping para o sentido: {sentido}")
+#         content = fetch_page(ConfigRequest.URL, ConfigRequest.HEADERS)
+#         if content:
+#             data = parse_table(content, sentido_cell_value, sentido)
+#             if data:
+#                 all_data.extend(data)
+#         else:
+#             logger.warning(f"Falha ao obter conteúdo para o sentido: {sentido}")
+#     logger.info("Scraping concluído")
+#     return all_data

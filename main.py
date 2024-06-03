@@ -49,7 +49,9 @@ def main():
     logging.info("Iniciando o processo de scraping e combinacao dos dados")
 
     # Definir diretórios de saída
-    paranagua_csv_dir = os.path.join("paranagua_scraper", "data", "csv")
+    paranagua_csv_dir = os.path.join(
+        "paranagua_scraper", "data", "csv", "Combined_ImpExp"
+    )
     santos_csv_dir = os.path.join("santos_scraper", "data", "csv", "ImpExp")
     output_csv_dir = os.path.join("combined_data", "csv")
     db_dir = os.path.join("combined_data", "db")
